@@ -5,11 +5,12 @@
 
 	<LinearLayout android:id="@+id/LinearLayout01"
 		android:layout_height="wrap_content" android:layout_width="fill_parent">
-		<EditText android:id="@+id/EditText" android:layout_height="180px"
+		<EditText android:id="@+id/EditText" android:layout_height="fill_parent"
 		    android:maxLength="34"
 			android:layout_width="fill_parent" 
 			android:textSize="30sp"
 			android:editable="false" />
+		
 	</LinearLayout>
 	
 	<LinearLayout android:id="@+id/LinearLayout03"
@@ -24,9 +25,16 @@
 		<Button android:layout_width="fill_parent"
 			android:layout_weight="1" android:text="9" android:id="@+id/num9_button"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:id="@+id/divide_button" android:text="/"
-			android:layout_width="fill_parent" android:layout_weight="1"
+		<Button android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="(" android:id="@+id/Bracketopen_button"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
+		<Button android:text=")" android:layout_width="fill_parent"
+			android:layout_weight="1" android:id="@+id/Bracketclose_button"
+			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
+		<Button android:text="*" android:layout_width="fill_parent"
+			android:layout_weight="1" android:id="@+id/multiple_button"
+			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
+		
 	</LinearLayout>
 	<LinearLayout android:id="@+id/LinearLayout04"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
@@ -40,8 +48,14 @@
 		<Button android:id="@+id/num6_button" android:text="6"
 			android:layout_width="fill_parent" android:layout_weight="1"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:text="*" android:layout_width="fill_parent"
-			android:layout_weight="1" android:id="@+id/multiple_button"
+		<Button android:text="." android:id="@+id/point_button"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:onClick="ButtonOnClick" android:layout_weight="1" />
+		<Button android:id="@+id/divide_button" android:text="/"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
+		<Button android:layout_weight="1" android:layout_width="fill_parent"
+			android:text="-" android:id="@+id/minus_button"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
 	</LinearLayout>
 	<LinearLayout android:id="@+id/LinearLayout05"
@@ -56,40 +70,28 @@
 		<Button android:id="@+id/num3_button" android:text="3"
 			android:layout_width="fill_parent" android:layout_weight="1"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:layout_weight="1" android:layout_width="fill_parent"
-			android:text="-" android:id="@+id/minus_button"
-			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-	</LinearLayout>
-	<LinearLayout android:id="@+id/LinearLayout06"
-		android:layout_width="fill_parent" android:layout_height="fill_parent"
-		android:layout_weight="1">
 		<Button android:id="@+id/num0_button" android:text="0"
 			android:layout_width="fill_parent" android:layout_weight="1"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:layout_width="fill_parent"
-			android:layout_weight="1" android:text="(" android:id="@+id/Bracketopen_button"
-			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:text=")" android:layout_width="fill_parent"
-			android:layout_weight="1" android:id="@+id/Bracketclose_button"
-			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:id="@+id/plus_button" android:text="+"
-			android:layout_width="fill_parent" android:layout_weight="1"
-			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-	</LinearLayout>
-	<LinearLayout android:id="@+id/LinearLayout07"
-		android:layout_width="fill_parent" android:layout_height="fill_parent"
-		android:layout_weight="1">
-		<Button android:text="." android:id="@+id/point_button"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:onClick="ButtonOnClick" android:layout_weight="1" />
-		<Button android:id="@+id/del_button" android:text="Del"
-			android:layout_width="fill_parent" android:layout_weight="1"
-			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
-		<Button android:text="Clear" android:id="@+id/clear_button"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:layout_weight="1" android:onClick="ButtonOnClick" />
 		<Button android:text="=" android:id="@+id/equal_button"
 			android:layout_height="fill_parent" android:onClick="ButtonOnClick"
 			android:layout_width="fill_parent" android:layout_weight="1" />
+		<Button android:id="@+id/plus_button" android:text="+"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
+		
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout06"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<Button android:text="Clear" android:id="@+id/clear_button"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:onClick="ButtonOnClick" />
+		<Button android:id="@+id/del_button" android:text="Del"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_height="fill_parent" android:onClick="ButtonOnClick" />
+		
+		
 	</LinearLayout>
 </LinearLayout>
